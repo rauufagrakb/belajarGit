@@ -1,0 +1,51 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  border: 3px solid red;
+  padding: 1px;
+  margin: 20px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "aside main main"
+    "footer footer footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+}
+
+header {
+  background-color: blueviolet;
+  padding: 30px;
+  grid-area: header;
+}
+
+aside {
+  background-color: rgb(0, 106, 255);
+  grid-area: aside;
+}
+
+nav {
+  background-color: rgb(255, 72, 0);
+  grid-area: nav;
+}
+
+main {
+  background-color: rgb(255, 149, 0);
+  grid-area: main;
+  display: grid;
+}
+
+footer {
+  background-color: grey;
+  grid-area: footer;
+}
