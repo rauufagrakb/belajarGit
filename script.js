@@ -16,6 +16,6 @@ logMovies().then((response)=>{
   console.log('datane ora bener mas')
 })
 console.log("macan")
-// percobaan ya gesya
+// percobaan ya gesya\
 
 
